@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<title>HTML Basic Structure</title>
+<style>
+.background_Image {
+	width: 1300px;
+	height: 1500px;
+	margin-left: 50px;
+	margin-right: 50px;
+	border: 1px solid rgb(127, 127, 127);
+	background: pink;
+	background-image: url("./images/bamboo2.jpg");
+}
+
+.container {
+	width: 910px;
+	height: 1300px;
+	margin: auto;
+	margin-top: 50px;
+	border: 1px solid rgb(127, 127, 127);
+	background: orange;
+	text-align: center;
+}
+
+.header {
+	margin-left: auto;
+	margin-right: auto;
+	height: 70px;
+	width: 100%;
+	border: 1px solid rgb(127, 127, 127);
+	background: #32CD32;
+}
+
+.header_right {
+	float: right;
+	height: 70px;
+	width: 70%;
+	background: #008080;;
+	display: inline;
+	background-image: url("./images/blueb.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.header_right ul {
+	margin: 0;
+	padding: 20px;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.header_left ul {
+	margin: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+li {
+	display: inline;
+	padding: 20px 20px 20px 20px;
+}
+
+.header_right a {
+	text-decoration: none;
+	color: blue;
+}
+
+.header_right a:hover {
+	color: yellow;
+}
+.header_left a {
+	text-decoration: none;
+	color: blue;
+}
+
+.header_left a:hover {
+	color: yellow;
+}
+
+.header_left {
+	float: left;
+	height: 70px;
+	width: 30%;
+	background: #008080;;
+	font-family: 'Brush Script MT', cursive;
+	font-size: 23px;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 26px;
+	background-image: url("./images/blueb.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.header_left h1: {
+	font: Great Vibes, bold, black;
+	font-style: italic;
+}
+
+.wrapper {
+	width: 905px;
+	height: 300px;
+	margin: auto;
+	border: 1px solid rgb(127, 127, 127);
+	text-align: center;
+}
+
+.content {
+	float: left;
+	margin: 0px 0px 0px 0px;
+	height: 300px;
+	width: 49.7%;
+	border: 1px solid rgb(127, 127, 127);
+	background-color: #008080;
+	overflow-y: scroll;
+	text-align: justify;
+	background: black;
+	background-image: url("./images/greeng.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+::-webkit-scrollbar-track {
+	background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+::-webkit-scrollbar-track {
+	background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.content p {
+	font: 15px verdana, bold, black;
+	padding-left: 0.3em;
+	text-indent: -0.3em;
+	padding-right: 0.3em;
+	opacity: 1;
+}
+
+.row12 {
+	margin: 0px 0px 0px 0px;
+	float: right;
+	width: 49.8%;
+	height: 300px;
+	border: 1px solid rgb(127, 127, 127);
+	background: black;
+	background-image: url("./images/world.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-color: #000;
+}
+
+.row2 {
+	float: left;
+	width: 100%;
+	height: 250px;
+	margin: 0px 0px 0px 0px;
+	border: 1px solid rgb(127, 127, 127);
+	background: rgb(195, 195, 195);
+	text-align: center;
+}
+
+.row21 {
+	float: left;
+	width: 33.1%;
+	height: 250px;
+	margin: 0px 0px 0px 0px;
+	border: 1px solid rgb(127, 127, 127);
+	background: black;
+	background-image: url("./images/humans.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-color: #000;
+}
+
+.row22 {
+	float: left;
+	width: 33.1%;
+	height: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid rgb(127, 127, 127);
+	background: black;
+	background-image: url("./images/cat.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-color: #000;
+}
+
+.row23 {
+	float: right;
+	width: 33.1%;
+	height: 250px;
+	margin: 0px 0px 0px 0px;
+	border: 1px solid rgb(127, 127, 127);
+	background: black;
+	background-image: url("./images/kid.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-color: #000;
+}
+
+.row3 {
+	float: left;
+	width: 100%;
+	height: 250px;
+	margin: 0px 0px 0px 0px;
+	border: 1px solid rgb(127, 127, 127);
+	background: rgb(195, 195, 195);
+	text-align: center;
+}
+
+.row31 {
+	float: left;
+	width: 33.1%;
+	height: 250px;
+	margin: 0px 0px 0px 0px;
+	border: 1px solid rgb(127, 127, 127);
+	background: black;
+	background-image: url("./images/nature.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-color: #000;
+}
+
+.row32 {
+	float: left;
+	width: 33.1%;
+	height: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid rgb(127, 127, 127);
+	background: black;
+	background-image: url("./images/dolp.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-color: #000;
+}
+
+.row33 {
+	float: right;
+	width: 33.1%;
+	height: 250px;
+	margin: 0px 0px 0px 0px;
+	border: 1px solid rgb(127, 127, 127);
+	background: black;
+	background-image: url("./images/horses.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-color: #000;
+}
+
+.row4_right {
+	float: right;
+	width: 33.1%;
+	height: 420px;
+	margin: 0px 0px 0px 0px;
+	border: 1px solid rgb(127, 127, 127);
+	background: #32CD32;
+	text-align: center;
+}
+
+.row4_left {
+	float: left;
+	width: 66.3%;
+	height: 418px;
+	margin: 0px 0px 0px 0px;
+	border: 1px solid rgb(127, 127, 127);
+	background: #32CD32;
+}
+
+.row4_right_up {
+	float: right;
+	width: 100%;
+	height: 320px;
+	margin: 0px 0px 0px 0px;
+	border: 1px solid rgb(127, 127, 127);
+	background: #32CD32;
+	background-image: url("./images/blueb.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.row4_right_up h2 {
+	font-style: italic;
+	color: Blue;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.row4_right_down {
+	float: right;
+	width: 100%;
+	height: 100px;
+	margin: 0px 0px 0px 0px;
+	border: 1px solid rgb(127, 127, 127);
+	background: black;
+	background-image: url("./images/apps1.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-color: #32CD32;
+}
+
+.row4_left1 {
+	float: left;
+	width: 100%;
+	height: 80px;
+	margin: 0px 0px 0px 0px;
+	border: 1px solid rgb(127, 127, 127);
+	background: #32CD32;
+	background-image: url("./images/blueb.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.row4_left2 {
+	float: left;
+	width: 100%;
+	height: 268px;
+	margin: 0px 0px 0px 0px;
+	border: 1px solid rgb(127, 127, 127);
+	background: #32CD32;
+	background-image: url("./images/blueb.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.row4_left3 {
+	float: left;
+	width: 100%;
+	height: 70px;
+	margin: 0px 0px 0px 0px;
+	border: 1px solid rgb(127, 127, 127);
+	background: #32CD32;
+	background-image: url("./images/blueb.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.row4_left3 p {
+	font-family: 'Brush Script MT', cursive;
+	font-size: 24px;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 24px;
+}
+
+.table_shows {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table_shows td {
+	padding: 6.0px;
+	border: #4e95f4 1px solid;
+}
+
+.table_shows tr {
+	background: #2F4F4F;
+}
+
+.table_shows tr:nth-child(odd) {
+	background: #2F4F4F;
+}
+
+.table_shows tr:nth-child(even) {
+	background: #708090;
+}
+
+#pic {
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+#pic:hover {
+	-webkit-filter: grayscale(100%);
+}
+
+#pic:active {
+	
+}
+</style>
+</head>
+<body>
+	<form id="form1" runat="server">
+
+		<div class="background_Image">
+			<div>
+
+				<div class="container">
+
+					<div class="header">
+						<div class="header_left">
+							<h2><ul>
+								<li><a href="http://www.google.com">Videographer</a></li></ul></h2>
+						</div>
+						<div class="header_right">
+							<ul>
+								<li><a href="http://www.google.com">Home</a></li>
+								<li><a href="http://www.google.com">About</a></li>
+								<li><a href="http://www.google.com">Portfolio</a></li>
+								<li><a href="http://www.google.com">Contact</a></li>
+								<li><a href="http://www.google.com">Subscribe</a></li>
+							</ul>
+						</div>
+
+					</div>
+
+					<div class="content">
+						<h2>*************** Earth ***************</h2>
+
+						<p>Nature is the most precious and valuable gift to us from
+							the God to live our life here on the earth. Nature makes our life
+							easy by providing all the required resources for daily living. We
+							should thankful to our nature for helping, caring and nurturing
+							us like a mother. We can enjoy the sweet sound and scenery of the
+							nature if we peacefully sit in the early morning in the garden.
+							Our nature is adorned with lots of scenic beauty which we can
+							enjoy anytime. Earth has geographical beauty and known as the
+							city of garden or heaven. But it is sad to say that such
+							beautiful gifts of God are declining day by day due to the
+							technological advancement and high level of ignorance of the
+							human beings.Nature is like our real mother which never harms us
+							but always nourishes us. Walking in the lap of nature in the
+							early morning makes us healthy and strong as well as keeps us
+							away from many lethal diseases like diabetes, chronic heart
+							diseases, high blood pressure, liver problem, digestive system
+							ailments, infections, brain disease, etc. It is good for our
+							health to hear the soft sound of the birds, rattle of the breeze,
+							sound of running fresh air, sound of running water in the river,
+							etc in the early morning. Most of the poets, writers and people
+							used to of yoga and meditation are seen in the early morning in
+							the garden to reenergise their body, mind and soul.</p>
+					</div>
+					<div>
+						<a id="pic" class="row12" href="http://www.w3.org"></a>
+					</div>
+					<div class="row2">
+						<div>
+							<a id="pic" class="row21" href="http://www.w3.org"></a>
+						</div>
+						<div>
+							<a id="pic" class="row22" href="http://www.w3.org"></a>
+						</div>
+						<div>
+							<a id="pic" class="row23" href="http://www.w3.org"></a>
+						</div>
+					</div>
+
+					<div class="row3">
+						<div>
+							<a id="pic" class="row31" href="http://www.w3.org"></a>
+						</div>
+						<div>
+							<a id="pic" class="row32" href="http://www.w3.org"></a>
+						</div>
+						<div>
+							<a id="pic" class="row33" href="http://www.w3.org"></a>
+						</div>
+					</div>
+					<div class="row4_right">
+						<div class="row4_right_up">
+							<p>
+							<h2>Twitter Feed</h2>
+							</p>
+							<p>What you take from the earth, you must give back. That's
+								nature's way..</p>
+							<hr>
+							<p>What are the some ways to go green? right your response!</p>
+							<hr>
+							<p>The clearest way into the Universe is through a forest
+								wilderness.</p>
+							<hr>
+							<p>
+							<h2>Facebook</h2>
+							</p>
+						</div>
+						<div class="row4_right_down"></div>
+					</div>
+					<div class="row4_left">
+						<div class="row4_left1">
+							<h1>Upcoming Shows</h1>
+						</div>
+						<div class="row4_left2">
+							<table class="table_shows">
+
+								<tr>
+
+									<td>1/1/11-Atlanta ,Georgia</td>
+									<td>SOLD OUT</td>
+								</tr>
+								<tr>
+									<td>1/10/11-St.Louis,Missouri</td>
+									<td>SOLD OUT</td>
+								</tr>
+								<tr>
+									<td>1/12/11-Silex,Missouri</td>
+									<td>BUY TICKETS</td>
+								</tr>
+								<tr>
+									<td>2/10/11- Phoenix,Arizona</td>
+									<td>BUY TICKETS</td>
+								</tr>
+								<tr>
+									<td>2/11/11-Tempe,Arizona</td>
+									<td>BUY TICKETS</td>
+								</tr>
+								<tr>
+									<td>2/20/11-Seattle,Washington</td>
+									<td>BUY TICKETS</td>
+								</tr>
+								<tr>
+									<td>3/1/11-Los Angeles,California</td>
+									<td>BUY TICKETS</td>
+								</tr>
+								<tr>
+									<td>3/4/11-San Francisco,California</td>
+									<td>BUY TICKETS</td>
+								</tr>
+
+							</table>
+						</div>
+						<div class="row4_left3">
+							<p>Copyright 2010 Videographer,All right reserved</p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</form>
+</body>
+</html>
